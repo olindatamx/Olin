@@ -7,7 +7,7 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet"/>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
+ 
     :root {
       --cafe:      #3E1F0D;
       --cafe-mid:  #6B3A22;
@@ -21,30 +21,30 @@
       --blanco:    #FDFAF7;
       --muted:     #8C7B6E;
     }
-
+ 
     @keyframes fadeUp {
       from { opacity: 0; transform: translateY(18px); }
       to   { opacity: 1; transform: translateY(0); }
     }
-
+ 
     body { font-family: 'DM Sans', sans-serif; background: var(--cafe-bg); color: var(--cafe); }
     .page { max-width: 640px; margin: 0 auto; padding: 0 0 3rem; }
-
+ 
     /* ── TOPBAR ── */
     .topbar {
       display: flex; align-items: center; justify-content: space-between;
       padding: 1.75rem 1.5rem 0;
       animation: fadeUp 0.4s ease both;
     }
-
+ 
     .logo { display: flex; align-items: center; gap: 2px; text-decoration: none; }
-
+ 
     /* El ojo reemplaza la O */
     .logo-eye {
       width: 36px; height: 36px;
       margin-right: 1px;
     }
-
+ 
     .logo-text {
       font-family: 'DM Sans', sans-serif;
       font-size: 1.4rem;
@@ -53,7 +53,7 @@
       letter-spacing: 0.18em;
       text-transform: uppercase;
     }
-
+ 
     .badge-top {
       font-size: 10px; font-weight: 500;
       color: var(--azul-mid); background: #EAF1F8;
@@ -61,7 +61,7 @@
       letter-spacing: 0.04em; text-transform: uppercase;
       border: 1px solid rgba(46,95,138,0.2);
     }
-
+ 
     /* ── HERO ── */
     .hero {
       margin: 1.5rem 1.25rem 0;
@@ -75,7 +75,7 @@
     .hero::before { content: ''; position: absolute; top: -80px; right: -80px; width: 260px; height: 260px; border-radius: 50%; background: radial-gradient(circle, rgba(192,57,43,0.2) 0%, transparent 70%); }
     .hero::after  { content: ''; position: absolute; bottom: -60px; left: -60px; width: 200px; height: 200px; border-radius: 50%; background: radial-gradient(circle, rgba(196,149,106,0.15) 0%, transparent 70%); }
     .hero > * { position: relative; z-index: 1; }
-
+ 
     .hero-badge {
       display: inline-block;
       background: rgba(196,149,106,0.15); border: 1px solid rgba(196,149,106,0.35);
@@ -83,7 +83,7 @@
       padding: 5px 14px; border-radius: 20px;
       letter-spacing: 0.06em; text-transform: uppercase; margin-bottom: 1.5rem;
     }
-
+ 
     .hero h1 {
       font-family: 'Cormorant Garamond', serif;
       font-size: 3rem; font-weight: 300;
@@ -92,7 +92,7 @@
       letter-spacing: -0.01em;
     }
     .hero h1 em { font-style: italic; color: var(--cafe-light); }
-
+ 
     .hero-cta {
       display: inline-block;
       background: var(--rojo); color: #fff;
@@ -104,10 +104,10 @@
       transition: background 0.2s, transform 0.15s;
     }
     .hero-cta:hover { background: var(--rojo-d); transform: translateY(-2px); }
-
+ 
     .pago-hint { margin-top: 1.1rem; font-size: 12px; color: rgba(255,255,255,0.38); }
     .pago-hint strong { color: var(--cafe-light); font-weight: 500; }
-
+ 
     /* ── PAGO BAR ── */
     .pago-bar {
       margin: 1.25rem 1.25rem 0;
@@ -122,7 +122,7 @@
     .pb-sub  { font-size: 11px; font-weight: 300; color: rgba(255,255,255,0.65); }
     .pb-monto { font-family: 'Cormorant Garamond', serif; font-size: 2rem; font-weight: 400; color: #fff; white-space: nowrap; text-align: right; line-height: 1.1; }
     .pb-monto small { font-family: 'DM Sans', sans-serif; font-size: 10px; font-weight: 300; display: block; color: rgba(255,255,255,0.6); letter-spacing: 0.05em; }
-
+ 
     /* ── SECCIÓN ── */
     .section { padding: 1.75rem 1.25rem 0; animation: fadeUp 0.4s ease 0.2s both; }
     .section-title {
@@ -130,7 +130,7 @@
       font-size: 1.5rem; font-weight: 300;
       color: var(--cafe); margin-bottom: 1rem; letter-spacing: 0.02em;
     }
-
+ 
     /* ── BENEFICIOS ── */
     .beneficios-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
     .bene { background: var(--blanco); border: 1px solid #E8DDD4; border-radius: 14px; padding: 1.25rem 1rem; transition: border-color 0.2s, transform 0.2s; }
@@ -138,7 +138,7 @@
     .bene-icon { font-size: 20px; margin-bottom: 8px; display: block; }
     .bene h3 { font-size: 13px; font-weight: 500; color: var(--cafe); margin-bottom: 4px; }
     .bene p  { font-size: 12px; color: var(--muted); line-height: 1.5; }
-
+ 
     /* ── AVISO ── */
     .aviso {
       background: var(--rojo-bg); border: 1.5px solid rgba(192,57,43,0.25);
@@ -149,7 +149,7 @@
     }
     .aviso p { font-size: 12px; color: var(--rojo-d); line-height: 1.65; font-weight: 300; }
     .aviso p strong { font-weight: 500; color: var(--rojo); }
-
+ 
     /* ── CÓMO FUNCIONA — beige con borde ── */
     .como {
       background: var(--cafe-bg);
@@ -159,7 +159,7 @@
       animation: fadeUp 0.4s ease 0.25s both;
     }
     .como .section-title { color: var(--cafe); margin-bottom: 1.5rem; }
-
+ 
     .paso { display: flex; gap: 14px; align-items: flex-start; margin-bottom: 1.25rem; }
     .paso:last-child { margin-bottom: 0; }
     .paso-num {
@@ -171,7 +171,7 @@
     }
     .paso-text h4 { font-size: 13px; font-weight: 500; color: var(--cafe); margin-bottom: 3px; }
     .paso-text p  { font-size: 12px; color: var(--muted); line-height: 1.55; font-weight: 300; }
-
+ 
     /* ── PRIVACIDAD ── */
     .priv-wrap { padding: 1.75rem 1.25rem 0; animation: fadeUp 0.4s ease 0.3s both; }
     .privacidad { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 1rem; }
@@ -179,7 +179,7 @@
     .priv-dot { width: 6px; height: 6px; min-width: 6px; border-radius: 50%; background: var(--azul-mid); margin-top: 4px; }
     .priv-item strong { display: block; font-size: 12px; font-weight: 500; color: var(--cafe); margin-bottom: 2px; }
     .priv-item p { font-size: 11px; color: var(--muted); line-height: 1.4; }
-
+ 
     /* ── CTA FINAL ── */
     .cta-final {
       margin: 1.5rem 1.25rem 0;
@@ -202,13 +202,13 @@
       transition: background 0.2s;
     }
     .cta-final a:hover { background: var(--rojo-d); }
-
+ 
     /* ── FOOTER ── */
     footer { text-align: center; font-size: 11px; color: var(--muted); line-height: 1.9; padding: 1.75rem 1.25rem 0; font-weight: 300; }
     footer a { color: var(--cafe-mid); text-decoration: none; }
     .slogan-footer { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 13px; color: var(--cafe-mid); margin-bottom: 5px; }
     hr.div { border: none; border-top: 1px solid #E8DDD4; margin: 1.75rem 1.25rem 0; }
-
+ 
     @media (max-width: 480px) {
       .hero h1 { font-size: 2.2rem; }
       .privacidad { grid-template-columns: 1fr; }
@@ -219,7 +219,7 @@
 </head>
 <body>
 <div class="page">
-
+ 
   <!-- TOPBAR: ojo reemplaza la O -->
   <div class="topbar">
     <a href="#" class="logo">
@@ -239,7 +239,7 @@
     </a>
     <div class="badge-top">Programa de participantes — México</div>
   </div>
-
+ 
   <!-- HERO -->
   <div class="hero">
     <div class="hero-badge">Convocatoria abierta · 2026</div>
@@ -247,7 +247,7 @@
     <a href="https://docs.google.com/forms/d/e/1FAIpQLSeg8LWN77qZR5nECbhvyQ09xKNzLskssot5tLicHI40z0zhMw/viewform" target="_blank" class="hero-cta">Quiero participar</a>
     <div class="pago-hint">Pago de <strong>$70 a $90 MXN</strong> por hora de sesión</div>
   </div>
-
+ 
   <!-- PAGO BAR -->
   <div class="pago-bar">
     <div class="pb-left">
@@ -259,7 +259,7 @@
     </div>
     <div class="pb-monto">$70–$90<small>MXN / hora</small></div>
   </div>
-
+ 
   <!-- POR QUÉ PARTICIPAR -->
   <div class="section">
     <div class="section-title">¿Por qué participar?</div>
@@ -270,13 +270,13 @@
       <div class="bene"><span class="bene-icon">🔒</span><h3>100% transparente</h3><p>Sabes qué datos se recolectan y cómo se usan.</p></div>
     </div>
   </div>
-
+ 
   <!-- AVISO -->
   <div class="aviso">
     <span style="font-size:18px; min-width:24px;">👐</span>
     <p>Buscamos personas que hagan <strong>quehaceres activos en casa</strong>: lavar, barrer, cocinar, trapear. Recolectamos <strong>movimientos de manos y cuerpo</strong> — no basta con estar sentado. Para la foto usa el lente <strong>0.5× (wide)</strong> de tu celular.</p>
   </div>
-
+ 
   <!-- CÓMO FUNCIONA — beige con borde -->
   <div class="como">
     <div class="section-title">¿Cómo funciona?</div>
@@ -297,7 +297,7 @@
       <div class="paso-text"><h4>Cobras por tus horas</h4><p>Al finalizar cada sesión verificada, recibes tu pago puntualmente.</p></div>
     </div>
   </div>
-
+ 
   <!-- PRIVACIDAD -->
   <div class="priv-wrap">
     <div class="section-title">Tu privacidad, nuestra prioridad</div>
@@ -308,22 +308,23 @@
       <div class="priv-item"><div class="priv-dot"></div><div><strong>Puedes retirarte</strong><p>En cualquier momento sin penalización.</p></div></div>
     </div>
   </div>
-
+ 
   <!-- CTA FINAL -->
   <div class="cta-final">
     <h3>¿Listo para<br><em>empezar?</em></h3>
     <p>Regístrate en menos de 3 minutos. Sin compromisos.</p>
     <a href="https://docs.google.com/forms/d/e/1FAIpQLSeg8LWN77qZR5nECbhvyQ09xKNzLskssot5tLicHI40z0zhMw/viewform" target="_blank">Llenar formulario →</a>
   </div>
-
+ 
   <hr class="div">
-
+ 
   <footer>
     <div class="slogan-footer">"Lo que haces hoy, enseña al mundo de mañana."</div>
     Olin · Ciudad de México · <a href="mailto:contacto@olin.mx">contacto@olin.mx</a><br>
     Aviso de privacidad conforme a la LFPDPPP · 2026
   </footer>
-
+ 
 </div>
 </body>
 </html>
+ 
